@@ -62,7 +62,7 @@ public class NumberUtilities {
     public static String getExponentiations(int start, int stop, int step, int exponent) {
         StringBuilder str = new StringBuilder();
         for (int i = start; i < stop; i += step) {
-            str.append(Math.round(Math.pow((double) i, (double) exponent)));
+            str.append(Math.round(Math.pow(i, exponent)));
         }
         return str.toString();
     }
