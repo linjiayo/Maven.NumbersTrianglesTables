@@ -20,20 +20,10 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        StringBuilder str = new StringBuilder();
-        for (int i = 1; i < 5; i++) {
-            str.append(getRow(i));
-            str.append("\n");
-        }
-        return str.toString();
+        return getTriangle(5);
     }
 
     public static String getLargeTriangle() {
-        StringBuilder str = new StringBuilder();
-        for (int i = 1; i < 10; i++) {
-            str.append(getRow(i));
-            str.append("\n");
-        }
-        return str.toString();
+        return getTriangle(10);
     }
 }
